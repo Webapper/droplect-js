@@ -8,7 +8,7 @@ Features:
 - Ok, ok, so it also supports type-ahead item search at 350ms of typing speed!
 
 ## Installation
-You can just download the latest version from its GitHub repository at https://github.com/assarte/droplect-js or using composer:
+You can just download the latest version from its GitHub repository at https://github.com/Webapper/droplect-js or using composer:
 ```
 composer require webapper/droplect-js
 ```
