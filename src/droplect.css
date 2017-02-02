@@ -1,0 +1,42 @@
+/* ========================================================================
+ * Droplect (dropdown-select hybrid) component for Bootstrap 3
+ * by Csaba Dobai
+ * droplect.js v1.0.0
+ * ------------------------------------------------------------------------
+ * This code based on:
+ * Bootstrap: dropdown.js v3.3.7
+ * http://getbootstrap.com/javascript/#dropdowns
+ * ========================================================================
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+.btn-droplect {
+    display: block;
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+.btn-droplect:before, .btn-droplect:after {
+    content: ' ';
+    clear: both;
+}
+.btn-droplect .caret {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    bottom: 50%;
+}
+.btn-droplect + .droplect.dropdown-menu {
+    overflow: hidden;
+    overflow-y: auto;
+    padding-right: 1px;
+    max-height: 50vh;
+    z-index: 100000 !important;
+}
+.btn-droplect + .droplect.dropdown-menu .checkbox label input[type="checkbox"] {
+    margin-left: -20px;
+    margin-right: 7px;
+}
+.btn-droplect + .droplect.dropdown-menu .checkbox label {
+    width: 100%;
+}
