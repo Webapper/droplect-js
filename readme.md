@@ -72,7 +72,7 @@ Events supported by Droplect.js are:
 - `hide.bs.droplect` will be triggered when droplects going to be hidden (thus, **before** of dropdown menu hide),
 - `hidden.bs.droplect` will be triggered when droplects are hidden from now on (so **after** of dropdown menu hide),
 - `show.bs.droplect` will be triggered when droplects going to be shown (it is **before** of dropdown menu became visible),
-- `shown.bs.droplect` will be triggered when droplects became visibly (which is **after** of dropdown menu appeared visibly), additionally a `focus` event will be triggered on each selected options' `<a>` elements after of this was happened,
+- `shown.bs.droplect` will be triggered when droplects became visibly (which is **after** of dropdown menu appeared visibly), additionally a `focus` event will be triggered on latest selected option's `<a>` element after of this was happened,
 - `select.bs.droplect` will be triggered after a value selected from the list of options you provided,
 - `focus` will be triggered after a value selected and droplect closed its dropdown, this is because of usablitiy issues,
 
