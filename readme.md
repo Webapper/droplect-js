@@ -60,6 +60,19 @@ In this sample code below we use checkbox inputs, you probably noticed that all 
 </div>
 ```
 
+### Events to be observed
+
+You can listen the toggled DOM element for event when they triggered eg. by using `$('[data-toggle="droplect"]').on(...)`. Events supported by Droplect.js are:
+
+- `hide.bs.droplect` will be triggered when droplects going to be hidden (thus, **before** of dropdown menu hide),
+- `hidden.bs.droplect` will be triggered when droplects are hidden from now on (so **after** of dropdown menu hide),
+- `show.bs.droplect` will be triggered when droplects going to be shown (it is **before** of dropdown menu became visible),
+- `shown.bs.droplect` will be triggered when droplects became visibly (which is **after** of dropdown menu appeared visibly), additionally a `focus` event will be triggered on each selected options' `<a>` elements after of this was happened,
+- `select.bs.droplect` will be triggered after a value selected from the list of options you provided,
+- `focus` will be triggered after a value selected and droplect closed its dropdown, this is because of usablitiy issues,
+
+Also, you can observe `change` events on the DOM element which used for mapping selection defined in `data-map-to` attribute.
+
 ## Legal info
 This component based on the original Bootstrap v3.3.7 dropdown.js, although I changed the most of it it's about time to credits for original dropdown's authors - thanks guys!
 
