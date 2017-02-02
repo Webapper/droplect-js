@@ -5,7 +5,7 @@ Personally, I created this plugin as pure as possible to replace HTML `<select>`
 ## Installation
 You can just download the latest version from its GitHub repository at https://github.com/assarte/droplect-js or using composer:
 ```
-composer install webapper/droplect.js
+composer install webapper/droplect-js
 ```
 
 Ensure the files will be placed into your project's www document-root where remote user agents can access it!
