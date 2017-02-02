@@ -62,7 +62,7 @@ In this sample code below we use checkbox inputs, you probably noticed that all 
 
 ### Events to be observed
 
-You can listen the toggled DOM element for event when they triggered eg. by using `$('[data-toggle="droplect"]').on(...)`. Events supported by Droplect.js are:
+You can listen a toggled DOM element for event when they triggered eg. by using `$('[data-toggle="droplect"]').on(...)`. Events supported by Droplect.js are:
 
 - `hide.bs.droplect` will be triggered when droplects going to be hidden (thus, **before** of dropdown menu hide),
 - `hidden.bs.droplect` will be triggered when droplects are hidden from now on (so **after** of dropdown menu hide),
