@@ -3,7 +3,7 @@
 Personally, I created this plugin as pure as possible to replace HTML `<select>` inputs in dropdown mode by Bootstrap 3 dropdown component in order to keep select's simplicity combined with formatting features of BS dropdown.
 
 Features:
-- It's mimic a `<select>` element which can be formatted all the way you could need, isn't fantastic enough? :D
+- It mimics a `<select>` element which can be formatted all the way you could need, isn't fantastic enough? :D
 - Ok, it supports keyboard-navigation: <kbd>up</kbd>, <kbd>down</kbd>, <kbd>home</kbd>, <kbd>end</kbd>, <kbd>enter</kbd>, and <kbd>escape</kbd>!
 - Ok, ok, so it also supports type-ahead item search at 350ms of typing speed!
 
