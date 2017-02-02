@@ -79,7 +79,7 @@ Events supported by Droplect.js are:
 Also, you can observe `change` events on the DOM element which used for mapping selection defined in `data-map-to` attribute.
 
 ### Living Samples of Usage
-<iframe width="100%" height="400" src="//jsfiddle.net/7raekpqp/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+Want a living trial of what is this? You can! Simply visit https://jsfiddle.net/7raekpqp/ in order to have some fun :)
 
 ## Legal info
 This component based on the original Bootstrap v3.3.7 dropdown.js, although I changed the most of it it's about time to credits for original dropdown's authors - thanks guys!
