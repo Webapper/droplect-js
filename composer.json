@@ -1,0 +1,11 @@
+{
+  "name": "webapper/droplect-js",
+  "description": "Droplect.js - Bootstrap 3 dropdown-select component",
+  "version": "0.2.0",
+  "type": "library",
+  "authors": {
+	"name": "Csaba Dobai (assarte)",
+	"email": "be.creative@webapper.hu",
+	"role": "Developer"
+  }
+}
