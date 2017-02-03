@@ -3,9 +3,21 @@
 Personally, I created this plugin as pure as possible to replace HTML `<select>` inputs in dropdown mode by Bootstrap 3 dropdown component in order to keep select's simplicity combined with formatting features of BS dropdown.
 
 Features:
-- It mimics a `<select>` element which can be formatted all the way you could need, isn't fantastic enough? :D
-- Ok, it supports keyboard-navigation: <kbd>up</kbd>, <kbd>down</kbd>, <kbd>home</kbd>, <kbd>end</kbd>, <kbd>enter</kbd>, and <kbd>escape</kbd>!
-- Ok, ok, so it also supports type-ahead item search at 350ms of typing speed!
+* It mimics a `<select>` element which can be formatted all the way you could need, isn't fantastic enough? :D
+* Ok, it supports keyboard-navigation: <kbd>up</kbd>, <kbd>down</kbd>, <kbd>home</kbd>, <kbd>end</kbd>, <kbd>enter</kbd>, and <kbd>escape</kbd>!
+* Ok, ok, so it also supports type-ahead item search at 350ms of typing speed!
+
+## Table of Contents
+
+* [Installation](#installation)
+* [Usage](#usage)
+    * [Single-selection mode](#single-selection-mode)
+    * [Multiple-selection mode](#multiple-selection-mode)
+    * [Events to be observed](#events-to-be-observed)
+    * [Living Samples of Use](#living-samples-of-use)
+        * [Demo for Basic Use](#demo-for-basic-use)
+        * [Pre-selected State](#pre-selected-state)
+* [Legal info](#legal-info)
 
 ## Installation
 You can just download the latest version from its GitHub repository at https://github.com/Webapper/droplect-js or using composer:
@@ -53,15 +65,15 @@ If you want to use a droplect in multi-selection mode you just need to add `data
 In this sample code below we use checkbox inputs, you probably noticed that all the `data-value` attributes are used regardless the use of `value` attributes of `<input>` tags.
 ```html
 <div class="dropdown">
-	<button id="multisel-droplect" type="button" class="btn btn-default btn-droplect form-control" data-toggle="droplect" data-multiple="multiple" aria-haspopup="true" aria-expanded="false">Combine my options! <span class="caret"></span></button>
-	<ul class="droplect dropdown-menu" aria-labelledby="multisel-droplect">
-		<li class="dropdown-header">Choose something</li>
-		<li data-value="option-1"><a href="#" class="checkbox"><label><input type="checkbox" name="multisel[]" value="option-1">Action</label></a></li>
-		<li data-value="option-2"><a href="#" class="checkbox"><label><input type="checkbox" name="multisel[]" value="option-2">Another action</label></a></li>
-		<li data-value="option-3"><a href="#" class="checkbox"><label><input type="checkbox" name="multisel[]" value="option-3">Something else here</label></a></li>
-	    <li role="separator" class="divider"></li>
-	    <li data-value="option-4"><a href="#" class="checkbox"><label><input type="checkbox" name="multisel[]" value="option-4">Separated link</label></a></li>
-	</ul>
+    <button id="multisel-droplect" type="button" class="btn btn-default btn-droplect form-control" data-toggle="droplect" data-multiple="multiple" aria-haspopup="true" aria-expanded="false">Combine my options! <span class="caret"></span></button>
+    <ul class="droplect dropdown-menu" aria-labelledby="multisel-droplect">
+        <li class="dropdown-header">Choose something</li>
+        <li data-value="option-1"><a href="#" class="checkbox"><label><input type="checkbox" name="multisel[]" value="option-1">Action</label></a></li>
+        <li data-value="option-2"><a href="#" class="checkbox"><label><input type="checkbox" name="multisel[]" value="option-2">Another action</label></a></li>
+        <li data-value="option-3"><a href="#" class="checkbox"><label><input type="checkbox" name="multisel[]" value="option-3">Something else here</label></a></li>
+        <li role="separator" class="divider"></li>
+        <li data-value="option-4"><a href="#" class="checkbox"><label><input type="checkbox" name="multisel[]" value="option-4">Separated link</label></a></li>
+    </ul>
 </div>
 ```
 
@@ -74,20 +86,22 @@ $('[data-toggle="droplect"]').on(...)
 
 Events supported by Droplect.js are:
 
-- `hide.bs.droplect` will be triggered when droplects going to be hidden (thus, **before** of dropdown menu hide),
-- `hidden.bs.droplect` will be triggered when droplects are hidden from now on (so **after** of dropdown menu hide),
-- `show.bs.droplect` will be triggered when droplects going to be shown (it is **before** of dropdown menu became visible),
-- `shown.bs.droplect` will be triggered when droplects became visibly (which is **after** of dropdown menu appeared visibly), additionally a `focus` event will be triggered on latest selected option's `<a>` element after of this was happened,
-- `select.bs.droplect` will be triggered after a value selected from the list of options you provided,
-- `focus` will be triggered after a value selected and droplect closed its dropdown, this is because of usablitiy issues,
+* `hide.bs.droplect` will be triggered when droplects going to be hidden (thus, **before** of dropdown menu hide),
+* `hidden.bs.droplect` will be triggered when droplects are hidden from now on (so **after** of dropdown menu hide),
+* `show.bs.droplect` will be triggered when droplects going to be shown (it is **before** of dropdown menu became visible),
+* `shown.bs.droplect` will be triggered when droplects became visibly (which is **after** of dropdown menu appeared visibly), additionally a `focus` event will be triggered on latest selected option's `<a>` element after of this was happened,
+* `select.bs.droplect` will be triggered after a value selected from the list of options you provided,
+* `focus` will be triggered after a value selected and droplect closed its dropdown, this is because of usablitiy issues,
 
 Also, you can observe `change` events on the DOM element which used for mapping selection defined in `data-map-to` attribute.
 
-### Living Samples of Usage
+### Living Samples of Use
+
+#### Demo for Basic Use
 
 Want a living trial of what is this? You can! Simply visit https://jsfiddle.net/7raekpqp/ in order to have some fun :)
 
-### Pre-selected State
+#### Pre-selected State
 
 In most of cases we use form input components rendered on the server-side thus we might need to display them populated and/or selected. This is also possible with Droplect.js which means you can define what option(s) selected by default, representing eg. a list of selection stored previously for a user, by using `data-selected="selected"` attributes:
 
