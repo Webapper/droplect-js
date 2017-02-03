@@ -84,7 +84,29 @@ Events supported by Droplect.js are:
 Also, you can observe `change` events on the DOM element which used for mapping selection defined in `data-map-to` attribute.
 
 ### Living Samples of Usage
+
 Want a living trial of what is this? You can! Simply visit https://jsfiddle.net/7raekpqp/ in order to have some fun :)
+
+### Pre-selected State
+
+In most of cases we use form input components rendered on the server-side thus we might need to display them populated and/or selected. This is also possible with Droplect.js which means you can define what option(s) selected by default, representing eg. a list of selection stored previously for a user, by using `data-selected="selected"` attributes:
+
+For single-selection mode:
+```html
+ <li data-value="option-1"><a href="#">Action</a></li>
+ <li data-value="option-2" data-selected="selected"><a href="#">Another action</a></li>
+ <li data-value="option-3"><a href="#">Something else here</a></li>
+```
+
+For multi-selection mode:
+```html
+<li data-value="option-1" data-selected="selected"><a href="#" class="checkbox"><label><input type="checkbox" name="multisel[]" value="option-1" checked>Action</label></a></li>
+<li data-value="option-2"><a href="#" class="checkbox"><label><input type="checkbox" name="multisel[]" value="option-2">Another action</label></a></li>
+<li data-value="option-3" data-selected="selected"><a href="#" class="checkbox"><label><input type="checkbox" name="multisel[]" value="option-3" checked>Something else here</label></a></li>
+```
+> You may noticed that the checkbox of item we marked as selected also marked as `checked`, so you should maintain the state of checkboxes as well.
+
+A demo presents this feature in work at https://jsfiddle.net/7raekpqp/1/ so you could check it.
 
 ## Legal info
 This component based on the original Bootstrap v3.3.7 dropdown.js, although I changed the most of it it's about time to credits for original dropdown's authors - thanks guys!
